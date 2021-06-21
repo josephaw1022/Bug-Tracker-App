@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+
+.custom-title-text {
+  align-self: center;
+ 
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(20px, 30px, 200px);
+  margin-bottom: 10px;
+
+  
+}
+
+.custom-w {
+  width: clamp(40vw, 100%, 60vw);
+}

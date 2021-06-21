@@ -1,0 +1,54 @@
+<mat-card
+  class="setBox blur-3xl"
+  style="
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0;
+    box-shadow: none;
+  "
+>
+  <mat-card-header>
+    <mat-card-title></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="flex flex-col md:flex-row justify-between h-full">
+      <div
+        class="
+          p-5
+          flex flex-row flex-wrap
+          md:flex-nowrap
+          justify-evenly
+          items-top
+          gap-4
+        "
+      >
+        <div>
+          <app-issuecard
+            [claimed]="false"
+            [done]="false"
+            [header]="'Not Started 🍿👀'"
+          ></app-issuecard>
+        </div>
+        <div>
+          <app-issuecard
+            [claimed]="true"
+            [done]="false"
+            [header]="'Not Finished 🧑🏻‍💻⏳'"
+          ></app-issuecard>
+        </div>
+        <div>
+          <app-issuecard
+            [claimed]="true"
+            [done]="true"
+            [header]="'Finally Finished 💅✅'"
+          ></app-issuecard>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-start gap-2">
+        <app-button [buttonText]="'Add Issue 🆕🤬'"></app-button>
+        <app-button [buttonText]="'Update 📈'"></app-button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
