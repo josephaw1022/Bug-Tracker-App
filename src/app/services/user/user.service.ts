@@ -18,6 +18,7 @@ export class UserService {
   public username: string = '';
 
   public work: boolean = true;
+
   // error messages received from the login attempt
   public errors: any = [];
 
@@ -39,9 +40,7 @@ export class UserService {
         this.httpOptions
       )
       .subscribe(
-        (data: any) => {
-          console.log(data);
-        },
+        (data: any) => {},
         (err: any) => {
           this.work = false;
           console.log(err);
@@ -64,7 +63,6 @@ export class UserService {
       .subscribe(
         (data: any) => {
           this.token = data.token;
-          console.log(data);
         },
         (err: any) => {
           this.errors = err;

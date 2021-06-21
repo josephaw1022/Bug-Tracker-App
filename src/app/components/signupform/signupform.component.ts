@@ -41,8 +41,8 @@ export class SignupformComponent implements OnInit {
     this.user.signup(this.submit_object);
 
     setTimeout((): void => {
-      this.route.navigate(['login']);
-    }, 300);
+      this.route.navigate(['home']);
+    }, 2000);
   }
 
   ngOnInit(): void {}
