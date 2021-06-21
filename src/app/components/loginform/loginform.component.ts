@@ -30,7 +30,7 @@ export class LoginformComponent implements OnInit {
       console.log('token here ');
       console.log(this._userService.token);
       this.route.navigate(['home']);
-    }, 300);
+    }, 2000);
   }
 
   ngOnInit(): void {
